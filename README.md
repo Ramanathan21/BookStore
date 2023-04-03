@@ -4,7 +4,7 @@
 
 - We have `Book` entity with `manyToMany` mappings to `Author` and `Category`.
 - Have used Spring JPA to bind these entities with underlying tables
-- `BookStore` is the Spring repository for the REST API endpoints
+- [BookStore.java](src/main/java/com/ramrv/book/store/service/BookStore.java) is the Spring repository for the REST API endpoints
 - Have used `CrudRepository` to facilitate common CRUD operations and added few `JPQL` statements for custom querying.
 - For dev env, Have used `H2` as a data source.
 - When the application boots, Spring executes [schema.sql](src/main/resources/schema.sql) to create the tables
